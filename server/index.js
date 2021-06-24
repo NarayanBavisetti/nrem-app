@@ -4,6 +4,8 @@ const app = express();
 const dotenv = require("dotenv")
 const PORT = process.env.PORT || 5000;
 
+app.use(express.json());
+
 dotenv.config({path : "./.env"});
 require("./db/connection")
 const middleware = (req, res, next) => {
@@ -11,7 +13,8 @@ const middleware = (req, res, next) => {
   next();
 };
 
-
+app.use(require("./routes/auth"));
+app.use(require("./routes/login"));
 // middleware();
 app.get("/", (req, res) => {
   res.send("Hi welcome to home");
