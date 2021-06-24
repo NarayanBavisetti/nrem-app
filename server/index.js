@@ -14,7 +14,7 @@ const middleware = (req, res, next) => {
 };
 
 app.use(require("./routes/auth"));
-app.use(require("./routes/login"));
+
 // middleware();
 app.get("/", (req, res) => {
   res.send("Hi welcome to home");
