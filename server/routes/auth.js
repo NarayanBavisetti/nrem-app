@@ -3,6 +3,7 @@ const router = express.Router();
 const User = require("../model/userSchema");
 const bcrypt = require("bcryptjs");
 
+
 require("../db/connection");
 router.post("/register", (req, res) => {
   console.log(req.body);
