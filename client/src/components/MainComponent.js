@@ -6,7 +6,7 @@ import Home from "./Home";
 import Login from "./Login";
 import Navbar from "./Navbar";
 import Register from "./Register";
-
+// import "./App.css"
 
 export default function Main() {
   return (
