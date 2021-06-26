@@ -7,6 +7,8 @@
     width: 70px;
     height: 70px;
     margin-bottom: 2rem;
+    background-color: #813AFE !important;
+    align-tracks:center;
 }
 .reset{
     color: black;
